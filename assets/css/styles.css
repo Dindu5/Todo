@@ -1,0 +1,32 @@
+body {
+  background: #352f5b;
+}
+.container {
+  max-width: 400px;
+}
+input[type="text"],
+input[type="text"]:focus {
+  color: #fff;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+.todos li {
+  background: #423a6f;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.todos li:hover {
+  box-shadow: 2px 2px 10px rgb(34, 33, 33);
+  transform: scale(1.01);
+  z-index: 4;
+}
+.todos li.filtered {
+  display: none !important;
+}
+.todos li span.done {
+  text-decoration: line-through;
+}
+.delete {
+  cursor: pointer;
+}
