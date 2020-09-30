@@ -47,18 +47,11 @@ searchForm.addEventListener("keyup", (e) => {
   filterTodos(term);
 });
 
-const switchTheme = (e) => {
-  console.log();
-  const button = document.querySelector(".theme-switcher i");
+// Theme Switcher
+const switchTheme = () => {
   document.documentElement.classList.toggle("dark-mode");
-  if (button.classList.contains("fa-toggle-on")) {
-    button.classList.remove("fa-toggle-on");
-    button.classList.add("fa-toggle-off");
-  } else {
-    button.classList.remove("fa-toggle-off");
-    button.classList.add("fa-toggle-on");
-  }
 };
+
 // const before = new Date("September 28 2020 7:15:50");
 // const now = new Date();
 // console.log(now);
