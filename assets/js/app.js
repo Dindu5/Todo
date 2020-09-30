@@ -46,3 +46,31 @@ searchForm.addEventListener("keyup", (e) => {
   const term = searchForm.value.trim().toLowerCase();
   filterTodos(term);
 });
+
+const switchTheme = (e) => {
+  console.log();
+  const button = document.querySelector(".theme-switcher i");
+  document.documentElement.classList.toggle("dark-mode");
+  if (button.classList.contains("fa-toggle-on")) {
+    button.classList.remove("fa-toggle-on");
+    button.classList.add("fa-toggle-off");
+  } else {
+    button.classList.remove("fa-toggle-off");
+    button.classList.add("fa-toggle-on");
+  }
+};
+// const before = new Date("September 28 2020 7:15:50");
+// const now = new Date();
+// console.log(now);
+
+// // Years
+// console.log(now.getTime() - before.getTime());
+
+// const diff = now.getTime() - before.getTime();
+
+// const mins = Math.round(diff / 1000 / 60);
+// const hours = Math.round(mins / 60);
+// const days = Math.round(hours / 24);
+// console.log(mins, hours, days);
+
+// console.log(new Date(before.getTime()));
